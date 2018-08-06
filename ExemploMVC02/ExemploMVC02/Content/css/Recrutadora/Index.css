@@ -1,0 +1,35 @@
+﻿body
+{
+
+}
+
+table
+{
+    width : 100%;
+}
+
+table thead tr, table tfoot tr
+{
+    background-color: #ff0000;
+    color : #ff6a00;
+    height: 40px;
+}
+
+table tbody tr { color : #0026ff}
+
+
+.botao-nova-recrutadora
+{
+    width: 100px;
+    height: 30px;
+    font-family:DFMincho-SU;
+    font-size: 50px;
+    background-color: ActiveCaption;
+    color:lightgrey;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    line-height: 30px;
+    text-align:center;
+    float: right;
+}
