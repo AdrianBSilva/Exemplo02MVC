@@ -39,6 +39,7 @@ namespace ExemploMVC02.Repositorio
         public int Cadastrar(Recrutadora recrutadora)
         {
             SqlCommand command = new BancoDados().ObterConexao();
+
             command.CommandText = "INSERT INTO recrutadoras (nome, salario, cpf, tempo_empresa) OUTPUT INSERTED.ID VALUES (@NOME, @SALARIO, @CPF, @TEMPO_EMPRESA)";
             command.Parameters.AddWithValue("@NOME", recrutadora.Nome);
             command.Parameters.AddWithValue("@SALARIO", recrutadora.Salario);
