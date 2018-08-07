@@ -7,19 +7,19 @@
     <form action="/Recrutadora/Store" method="post">
         <div class="form-group">
             <label for="campo-nome">Nome</label>
-            <input type="text" class="form-control" name="Recrutadora.Nome" id="campo-nome" placeholder="Digite um nome" required="required">
+            <input type="text" class="form-control" name="Recrutadora.Nome" id="campo-nome" value="@ViewBag.Recrutadora.Nome" required="required">
         </div>
         <div class="form-group">
             <label for="campo-cpf">CPF</label>
-            <input type="text" class="form-control" name="Recrutadora.CPF" id="campo-cpf" placeholder="Digite um CPF" required="required">
+            <input type="text" class="form-control" name="Recrutadora.CPF" id="campo-cpf" value="@ViewBag.Recrutadora.CPF" required="required">
         </div>
         <div class="form-group">
             <label for="campo-salario">Salário</label>
-            <input type="text" class="form-control" name="Recrutadora.Salario" id="campo-salario" placeholder="Digite um salário" required="required">
+            <input type="text" class="form-control" name="Recrutadora.Salario" id="campo-salario" value="@ViewBag.Recrutadora.Salario" required="required">
         </div>
         <div class="form-group">
             <label for="campo-tempo-empresa">Tempo Empresa</label>
-            <select id="campo-tempo-empresa" class="form-control" name="Recrutadora.TempoEmpresa" placeholder="Selecione um campo" required="required">
+            <select id="campo-tempo-empresa" class="form-control" name="Recrutadora.TempoEmpresa" value="@ViewBag.Recrutadora.TempoEmpresa" required="required">
                 @for (int i = 0; i < 7; i++)
                 {
                     if (i == @ViewBag.Recrutadora.TempoEmpresa)
