@@ -42,7 +42,7 @@ namespace ExemploMVC02.Controllers
         public ActionResult Excluir(int id)
         {
             bool apagado = new RecrutadoraRepositorio().Excluir(id);
-            return null;
+            return Redirect("Index");
         }
 
         [HttpPost]

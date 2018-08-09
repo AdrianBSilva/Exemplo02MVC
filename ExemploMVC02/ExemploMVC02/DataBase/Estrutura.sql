@@ -1,4 +1,5 @@
-﻿DROP TABLE recrutadoras;
+﻿
+DROP TABLE recrutadoras;
 
 CREATE TABLE recrutadoras(
 id INT IDENTITY (1,1) PRIMARY KEY,

@@ -69,7 +69,6 @@ namespace ExemploMVC02.Repositorio
             return command.ExecuteNonQuery() == 1;
 
 
-            return command.ExecuteNonQuery() == 1;
         }
 
         public Recrutadora ObterPeloId(int id)
